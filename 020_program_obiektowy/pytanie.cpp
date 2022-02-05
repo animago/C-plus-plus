@@ -1,7 +1,9 @@
 #include "pytanie.h"
+#include <algorithm>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -48,11 +50,13 @@ void Pytanie::zadaj() {
   cout << "c.) " << c << endl;
   cout << "d.) " << d << endl;
   cout << "--------------------------------" << endl;
-  cout << endl << "Odpowiedź: ";
+  cout << endl << "Odpowiedz: ";
   cin >> odpowiedz;
+  transform(odpowiedz.begin(), odpowiedz.end(), odpowiedz.begin(), ::tolower);
 }
 
 void Pytanie::sprawdz() {
+
   if (odpowiedz[0] == poprawna[0]) {
     punkt = 1;
   } else {

@@ -43,17 +43,17 @@ void Pytanie::wczytaj() {
 
 void Pytanie::zadaj() {
   cout << endl << tresc << endl;
-  cout << a << endl;
-  cout << b << endl;
-  cout << c << endl;
-  cout << d << endl;
+  cout << "a.) " << a << endl;
+  cout << "b.) " << b << endl;
+  cout << "c.) " << c << endl;
+  cout << "d.) " << d << endl;
   cout << "--------------------------------" << endl;
-  cout << endl << "Odpowiedz: ";
+  cout << endl << "Odpowiedź: ";
   cin >> odpowiedz;
 }
 
 void Pytanie::sprawdz() {
-  if (odpowiedz == poprawna) {
+  if (odpowiedz[0] == poprawna[0]) {
     punkt = 1;
   } else {
     punkt = 0;

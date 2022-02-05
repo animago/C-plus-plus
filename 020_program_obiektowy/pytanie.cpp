@@ -19,23 +19,23 @@ void Pytanie::wczytaj() {
 
   while (getline(plik, linia)) {
     if (aktualny_nr == nr_linii) {
-      tresc = linia
-    };
+      tresc = linia;
+    }
     if (aktualny_nr == nr_linii + 1) {
-      a = linia
-    };
+      a = linia;
+    }
     if (aktualny_nr == nr_linii + 2) {
-      b = linia
-    };
+      b = linia;
+    }
     if (aktualny_nr == nr_linii + 3) {
-      c = linia
-    };
+      c = linia;
+    }
     if (aktualny_nr == nr_linii + 4) {
-      d = linia
-    };
+      d = linia;
+    }
     if (aktualny_nr == nr_linii + 5) {
-      poprawna = linia
-    };
+      poprawna = linia;
+    }
     aktualny_nr++;
   }
   plik.close();

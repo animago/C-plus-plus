@@ -37,4 +37,6 @@ std::cout << result << std::endl;
 result = calculate("hello", 2, 3);     // result = "Invalid data"
 std::cout << result << std::endl;
 
+std::cout << "Koniec!" << std::endl;
+
 };

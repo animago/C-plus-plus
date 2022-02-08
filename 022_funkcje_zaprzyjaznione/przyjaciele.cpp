@@ -13,8 +13,8 @@ void Punkt::wczytaj() {
   cin >> x;
   cout << "Podaj y: ";
   cin >> y;
-  cout << "Nazwa punktu: ";*/
-  cin >> nazwa;
+  cout << "Nazwa punktu: ";
+  cin >> nazwa; */
 }
 
 Prostokat::Prostokat(string n, float xx, float yy, float s, float w) {
